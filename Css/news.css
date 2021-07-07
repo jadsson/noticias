@@ -1,0 +1,221 @@
+@import url(style.css);
+/* ALL NEWS PAGE */
+.title-news {
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 5px solid var(--letter--color);
+    width: fit-content;
+}
+.div-news {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+.news {
+    width: 300px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 3.5px 7px 3.5px;
+    border-radius: 5px;
+    border-right: 1px solid var(--letter--secundary);
+    border-bottom: 2px solid var(--letter--secundary);
+    background: var(--background--secundary);
+    backdrop-filter: blur(5px);
+    transition: all ease .5s;
+    box-shadow: 2px 5px 3px var(--shadow);
+}
+.news-content {
+    padding: 0 10px;
+}
+.news:hover {
+    box-shadow: 5px 5px 25px 10px var(--shadow);
+    transform: translateY(-2px);
+}
+#link-news {
+    width: fit-content;
+}
+.news img {
+    height: 200px;
+    width: 100%;
+}
+.news-title {
+    color: var(--letter--secundary);
+    font-weight: 800;
+}
+.news-p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.news-date {
+    color: var(--letter--secundary);
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* BOTAO EXCLUIR/EDITAR NOTÍCIA */
+.icon-delete-news {
+    position: absolute;
+    right: 70px;
+    top: 160px;
+    padding: 10px 10px 5px 10px;
+    background: rgba(0,0,0,.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon-delete-news:hover {
+    background: red;
+}
+.news-edit-button {
+    position: absolute;
+    background: rgba(255,255,255,.7);
+    top: 10px;
+    right: 20px;
+    padding: 2px 15px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+.news-edit-button:hover {
+    background: orangered;
+    color: var(--letter--secundary);
+}
+.news:hover .news-edit-button {
+    opacity: 1;
+}
+/* BOTAO DE EDITAR NOTÍCIA DA PÁGINA NEWSOPEN */
+.button-edit-news-page-news-open {
+    position: absolute;
+    right: 10px;
+    top: 160px;
+    padding: 2px 16px 5px 16px;
+    background: rgba(0,0,0,.3);
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.button-edit-news-page-news-open:hover {
+    background: orangered;
+    color: #fff;
+}
+
+/* NEWS OPEN */
+.link-all-news {
+    font-weight: 700;
+    transition: all ease .5s;
+    text-align: center;
+    margin: -40px 40px 20px -40px;
+    width: calc(100% + 80px);
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+}
+.link-all-news a{
+    color: #fff;
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    line-height: 150px;
+    font-size: 40px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+}
+#background-link-all-news {
+    display: flex;
+}
+#background-link-all-news img {
+    width: 100%;
+    min-height: 150px;
+}
+.background-img-unique {
+    width: 40%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.title {
+    padding: 0px 0px 20px 0;
+}
+.title h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 0;
+}
+.title em {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* NEWS IMAGES */
+.corpo--imagens {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px auto;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.corpo--imagens::-webkit-scrollbar {
+    width: 7px;
+}
+.corpo--imagens::-webkit-scrollbar-thumb {
+    background: var(--background--secundary);
+    border-radius: 5px;
+}
+.corpo--imagens .img {
+    max-width: 590px;
+    height: 250px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.corpo--imagens img{
+    width: 100%;
+    min-height: 160px;
+    transition: all ease .5s;
+}
+/* BOTÃO EXCLUIR IMAGEM */
+.img {
+    position: relative;
+}
+.img span {
+    opacity: 0;
+    font-size: 40px; 
+    cursor:pointer; 
+    position: absolute; 
+    top: -10px; 
+    right:10px;
+    font-weight: 700;
+    color: rgb(255, 75, 75);   
+    text-shadow: 2px 2px 0px var(--red--dark);   
+    transition: all ease .5s;          
+}
+.img span:hover {
+    opacity: 1;
+}
+.corpo--imagens img:hover {
+    transform: scale(1.1);
+}
+
+/* NEWS TEXT */
+#texto {
+    padding: 0px 3px 20px 3px;
+    margin: 0 auto;
+    line-height: 27px;
+    text-align: justify;
+    font-size: 22px;
+}

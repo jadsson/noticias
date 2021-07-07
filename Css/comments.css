@@ -1,0 +1,89 @@
+/* FORMULÁRIO DE COMENTÁRIOS */
+.button-comments {
+    background: var(--red--dark);
+    border: none;
+    box-shadow: none;
+    height: 30px;
+    width: 150px;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: var(--letter--color);
+    margin-left: calc(100% - 155px);
+}
+.button-comments:hover {
+    background: var(--background--secundary);
+    color: var(--letter--secundary);
+}
+textarea#comment {
+    box-shadow: none;
+    min-height: 20px;
+    font-size: 1em;
+    padding: 10px 0 0 10px;
+    border: 1px solid var(--shadow);
+    border-radius: 10px;
+    background: var(--letter--secundary);
+
+}
+textarea#comment:focus {
+    border-color: var(--red--dark);
+}
+/* COMENTÁRIOS */
+#comentarios {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    min-width: calc(100% - 80px);
+    padding: 40px;
+    max-width: 1200px;
+    background-color: var(--letter--secundary);
+}
+#comentarios .comentario--unico {
+    display: flex;
+    position: relative;
+    padding: 15px 0;
+}
+.comentario--img {
+    width: 40px;
+    height: 40px;
+    background-image: url('../Img/Icons/pessoa.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    box-shadow: 1px 2px 5px var(--letter--secundary);
+}
+.comentario--nome-dia {
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
+}
+.comentario--nome {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.comentario--dia {
+    color: #808080;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.comentario--excluir {
+    color: #8f0c00;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.comentario--excluir:hover {
+    border-bottom: 2px solid #520700;
+}
+.comentario--conteudo {
+    font-size: 16px;
+    height: 100%;
+    max-width: 1200px;
+    margin-left: 60px;
+}
+.comentario--nome--adm {
+    color: #bd1000;
+}
+.comentario--nome--master {
+    color: rgb(0, 154, 201);
+}

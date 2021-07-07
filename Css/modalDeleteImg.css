@@ -1,0 +1,41 @@
+@import url(style.css);
+#modal-delete-img {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--shadow);
+    justify-content: center;
+    align-items: center;
+}
+#modal-delete-img #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    background: rgba(255,255,255,.8);
+    padding: 20px;
+    animation-name: deleteimg;
+    animation-duration: .5s;
+}
+@keyframes deleteimg {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+#modal-delete-img #content img {
+    width: 250px;
+    margin: 5px;
+}
+#modal-delete-img #content #close-modal-delete-img {
+    height: 40px;
+    background: var(--botao--cancelar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--letter--secundary);
+    font-weight: 600;
+    cursor: pointer;
+}

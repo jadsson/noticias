@@ -1,0 +1,84 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header--width {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header {
+    background: var(--background--secundary);
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all ease .3s;
+    z-index: 5;
+}
+ul {
+    list-style: none;
+    letter-spacing: 1px;
+}
+ul a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: var(--letter--secundary);
+    transition: all ease .3s;
+}
+ul a:hover {
+    background-color: var(--letter--secundary);
+    color: var(--letter--color);
+    border-radius: 3px;
+}
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 130px;
+    background: var(--background--secundary);
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,.4);
+    border-radius: 3px;
+}
+#header--ul--principal {
+    display: flex;
+}
+.header--li {
+    margin-left: 15px;
+    padding: 10px;
+    color: var(--letter--secundary);
+    cursor: pointer;
+    text-align: center;
+    transition: all ease .6s;
+}
+.header--li li {
+    margin: 5px 0px;
+    padding: 5px 15px;
+}
+.header--ul--news, 
+.header--ul--images, 
+.header--ul--user {
+    font-size: .9em;
+    margin-top: 10px;
+    display: none;
+}
+header.scroll {
+    height: 42px;
+}
+header.scroll .header--logo {
+    font-size: 30px;
+}
+header.scroll .header--li, header.scroll ul a {
+    font-size: .7em;
+}
+header.scroll .header--li ul li {
+    font-size: 1.5em!important;
+}

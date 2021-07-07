@@ -1,0 +1,26 @@
+#rodape {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background--secundary);
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+#rodape ul {
+    list-style: none;
+    padding: 20px;
+}
+#rodape ul a {
+    padding: 2px 0;
+}
+#rodape ul a:hover {
+    background: transparent;
+    text-decoration: underline;
+    color: white;
+}
+#rodape ul li{
+    color: var(--letter--secundary);
+    line-height: 22px;
+    font-weight: normal;
+}
